@@ -8,16 +8,38 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb)); */
+}
+
+.n-btn {
+  display: block;
+  border: 0.5px solid #0034b9;
+  border-radius: 0.45rem;
+  color: black;
+  font-weight: 500;
+  padding-inline: 1.5rem;
+  padding-block: 0.4rem;
+}
+
+/* 1D4771 */
+
+.a-btn {
+  background-color: #1d4771;
+  display: block;
+  border-radius: 0.45rem;
+  color: white;
+  font-weight: 500;
+  padding-inline: 1.5rem;
+  padding-block: 0.4rem;
 }
 
 @layer utilities {
