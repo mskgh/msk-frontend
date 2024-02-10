@@ -1,0 +1,16 @@
+.statContainer {
+  display: flex;
+  height: 15rem;
+  position: relative;
+  background-image: url("/images/stat_background.svg");
+}
+
+.statContainer::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* top: 0; */
+    background-color: #010d14;
+    opacity: 0.9;
+}

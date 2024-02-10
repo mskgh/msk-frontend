@@ -8,6 +8,13 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+
+/* 
+
+*/
+
+
+
 /* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -30,6 +37,21 @@ body {
   padding-block: 0.4rem;
 }
 
+.btn {
+  display: block;
+  border: 0.5px solid black;
+  border-radius: 0.45rem;
+  /* color: black; */
+  font-weight: 500;
+  padding-inline: 1.5rem;
+  padding-block: 0.4rem;
+}
+
+.n-btn:hover {
+  background-color: #1d4771;
+  color: white;
+}
+
 /* 1D4771 */
 
 .a-btn {
@@ -42,8 +64,63 @@ body {
   padding-block: 0.4rem;
 }
 
+.text-normal {
+  font-size: 0.8rem;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* accordion */
+
+.accordion {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  /* column-gap: 3rem; */
+  row-gap: 1rem;
+}
+
+.accordion_item {
+  border: 1px solid #9f9f9f;
+  /* margin-bottom: 0.8rem; */
+}
+
+.button {
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  text-align: left;
+  font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 8px;
+  cursor: pointer;
+  border: none;
+}
+
+.control {
+  font-size: 20px;
+}
+
+.answer {
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+/* activate toggle */
+.accordion_item.active .button {
+  background-color: #105057;
+  color: white;
+}
+.answer_wrapper {
+  height: 0;
+  overflow: hidden;
+  transition: height ease 0.2s;
 }

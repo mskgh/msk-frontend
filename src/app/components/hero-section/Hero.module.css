@@ -1,0 +1,9 @@
+.carouselItem {
+  display: flex !important;
+  flex-direction: row;
+  column-gap: 4rem !important;
+  align-items: center;
+  /* background-color: aqua; */
+  padding-inline: 5rem !important;
+  /* width: 70% !important; */
+}

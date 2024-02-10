@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -6,8 +6,7 @@ import brand from "../../../../public/images/brandLogo.svg";
 import { usePathname } from "next/navigation";
 import classNames from "classnames";
 const Navbar = () => {
-    
-const currentPath = usePathname()
+  const currentPath = usePathname();
   const links = [
     { label: "Home", href: "/" },
     { label: "Feature", href: "/feature" },
@@ -19,7 +18,7 @@ const currentPath = usePathname()
   ];
 
   return (
-    <header className="px-5 py-2 flex items-center justify-between">
+    <header className="px-5 py-2 flex items-center justify-between bg-white z-50 sticky w-full top-0">
       <nav className="flex items-center justify-between w-[60%]">
         <Link href={"/"}>
           <Image src={brand} height={50} alt="brand logo" />
@@ -29,9 +28,9 @@ const currentPath = usePathname()
             key={link.href}
             href={link.href}
             className={classNames({
-                'text-[#0d243b]': link.href === currentPath,
-                'text-black': link.href !== currentPath,
-                'hover:text-[#0d243b] transition-colors':true
+              "text-[#0d243b]": link.href === currentPath,
+              "text-black": link.href !== currentPath,
+              "hover:text-[#0d243b] transition-colors": true,
             })}
           >
             {link.label}
