@@ -6,15 +6,14 @@ import download from "../../../../public/images/phoneDownload.jpg";
 import Image from "next/image";
 const DownloadComp = () => {
   return (
-    <section className="bg-[#1D4771] flex justify-center pt-16">
-      <div className="w-[80%] flex relative justify-center  text-white pl-[7rem]">
-        <div className="flex w-[60%]  flex-col  gap-5">
+    <section className="bg-[#1D4771] flex items-center justify-center py-16">
+      <div className="w-[80%] flex relative justify-center  text-white">
+        <div className="flex w-[60%]   flex-col  gap-5">
           <h1 className="text-4xl text-center">Download our app for free</h1>
           <p className="text-normal text-center ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
-            distinctio. Iure voluptates maxime dolorem odit similique, sit
-            itaque laborum dignissimos facilis debitis provident ducimus quia
-            expedita adipisci rem minus perferendis!
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique. Duis cursus, mi quis
+            viverra ornare duis cursus, mi quis viverra.
           </p>
 
           <div className="flex justify-center items-center gap-6">
@@ -32,8 +31,8 @@ const DownloadComp = () => {
             and Conditions.
           </p>
 
-          <div className="flex gap-5 justify-center mt-5 mb-10">
-            <button className="flex items-center gap-3 outline-1 outline-white rounded bg-black text-white px-4 py-3 text-center text-sm">
+          <div className="flex gap-5 justify-center mt-5">
+            <button className="flex items-center gap-3 outline-1 outline-white rounded bg-black text-white px-3 py-2 text-center text-sm">
               <span>
                 <Image src={playStore} alt="play store" />
               </span>
@@ -42,7 +41,7 @@ const DownloadComp = () => {
                 <h4 className="text-2xl font-bold">Google Play</h4>
               </span>
             </button>
-            <button className="flex items-center gap-3 rounded bg-black px-4 py-3 text-center text-sm">
+            <button className="flex items-center gap-3 rounded bg-black px-3 py-2 text-center text-sm">
               <span>
                 <Image src={apple} alt="apple icon" />
               </span>

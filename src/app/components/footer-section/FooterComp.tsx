@@ -8,13 +8,15 @@ const FooterComp = () => {
   return (
     <section className="flex justify-center py-16 bg-[#1d4771]">
       <div className="w-[80%] flex flex-col">
-        <div className="flex justify-between pb-10 border-b-2 border-b-white">
-          <h1 className="text-3xl text-white">
+        <div className="flex justify-between pb-10 border-b border-b-white">
+          <h1 className="text-lg font-bold text-white">
             Start your 30 days trial <br /> with us
           </h1>
-          <button className="n-btn bg-white text-[#1d4771] hover:bg-white">
-            Contact Ud
-          </button>
+          <div>
+            <button className="rounded px-4 py-2 font-bold  flex bg-white text-[#1d4771] hover:bg-white">
+              Contact us
+            </button>
+          </div>
         </div>
         <div className="flex justify-between mt-10">
           <div className="aboutUs flex flex-col gap-5 w-[30%] text-white">

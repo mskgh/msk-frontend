@@ -4,17 +4,17 @@ import Accordion from "../accordion/Accordion";
 const FAQComp = () => {
   return (
     <section className="faq flex justify-center">
-      <div className="w-[80%] pt-12">
+      <div className="w-[80%] flex flex-col items-center pt-12 ">
         <div className="flex flex-col gap-4">
           <h1 className="font-bold text-3xl text-center">
-            Frequently Ask Question{" "}
+            Frequently Ask Questions{" "}
           </h1>
           <p className="text-normal text-center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             varius enim in eros elementum tristique.
           </p>
         </div>
-        <div className="accordionContainer mt-10">
+        <div className="accordionContainer flex justify-center w-[70%] mt-10">
           <Accordion />
         </div>
 

@@ -1,6 +1,4 @@
-import Image from "next/image";
-import Link from "next/link";
-import Navbar from "./components/navbar/Navbar";
+
 import HeroSecComp from "./components/hero-section/HeroSecComp";
 import StatComp from "./components/stat-section/StatComp";
 import FeatureComp from "./components/feature-section/FeatureComp";
