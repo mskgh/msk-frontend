@@ -7,17 +7,17 @@ import Image from "next/image";
 const DownloadComp = () => {
   return (
     <section className="bg-[#1D4771] flex items-center justify-center py-16">
-      <div className="w-[80%] flex relative justify-center  text-white">
-        <div className="flex w-[60%]   flex-col  gap-5">
-          <h1 className="text-4xl text-center">Download our app for free</h1>
-          <p className="text-normal text-center ">
+      <div className=" md:w-[80%] flex flex-col md:flex-row relative justify-center  text-white">
+        <div className="flex md:w-[60%]   items-center   flex-col  gap-5">
+          <h1 className="text-4xl text-center px-3 md:px-0">Download our app for free</h1>
+          <p className="text-normal text-center px-2 md:px-0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             varius enim in eros elementum tristique. Duis cursus, mi quis
             viverra ornare duis cursus, mi quis viverra.
           </p>
 
-          <div className="flex justify-center items-center gap-6">
-            <div className="w-[55%]">
+          <div className="flex justify-center flex-col md:flex-row items-center gap-6 w-full ">
+            <div className="flex w-[80%]  md:w-[55%] ">
               {" "}
               <Input placeholder="Enter your email" />{" "}
             </div>
@@ -26,7 +26,7 @@ const DownloadComp = () => {
               Download up
             </button>
           </div>
-          <p className="text-normal text-center">
+          <p className="text-normal text-center px-2 md:px-0">
             By clicking Sign Up you're confirming that you agree with our Terms
             and Conditions.
           </p>
@@ -52,7 +52,7 @@ const DownloadComp = () => {
             </button>
           </div>
         </div>
-        <div className="Image absolute top-[-4rem] right-[-6rem]">
+        <div className="Image hidden md:flex absolute top-[-4rem] right-[-6rem]">
           <Image src={download} height={400} alt="download app" />
         </div>
       </div>

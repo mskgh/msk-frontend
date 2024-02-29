@@ -22,7 +22,6 @@ export default function Home() {
       <TestimonialComp />
       <DownloadComp />
       <FAQComp />
-      <FooterComp />
     </main>
   );
 }

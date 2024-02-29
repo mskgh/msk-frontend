@@ -5,10 +5,10 @@ import Image from "next/image";
 const TrackComp = () => {
   return (
     <div className="py-16 flex justify-center">
-      <div className="w-[80%] flex justify-between ">
-        <div className="track-text w-[60%]">
-          <div className="flex flex-col">
-            <h1 className="text-3xl font-bold">
+      <div className="w-[90%] md:w-[80%] flex flex-col md:flex-row justify-between ">
+        <div className="track-text w-full md:w-[70%]">
+          <div className="flex flex-col ">
+            <h1 className="text-3xl font-bold text-center md:text-left">
               Keeping track of your <br /> expenses is made easy <br /> with
               this app
             </h1>
@@ -20,10 +20,10 @@ const TrackComp = () => {
               your fingertips
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-8 mt-8">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-5 md:gap-8 p-2 md:p-0 mt-8">
             <div className="flex gap-5">
               <span>
-                <Image src={checkIcon} height={70} alt="check icon" />
+                <Image src={checkIcon} height={90} alt="check icon" />
               </span>
               <div className="flex flex-col gap-3">
                 <h2 className="font-bold">Carefully Design</h2>
@@ -36,7 +36,7 @@ const TrackComp = () => {
             </div>
             <div className="flex gap-5">
               <span>
-                <Image src={checkIcon} height={70} alt="check icon" />
+                <Image src={checkIcon} height={90} alt="check icon" />
               </span>
               <div className="flex flex-col gap-3">
                 <h2 className="font-bold">Choose the App features</h2>
@@ -48,7 +48,7 @@ const TrackComp = () => {
             </div>
             <div className="flex gap-5">
               <span>
-                <Image src={checkIcon} height={70} alt="check icon" />
+                <Image src={checkIcon} height={120} alt="check icon" />
               </span>
               <div className="flex flex-col gap-3">
                 <h2 className="font-bold">Seamless Sync</h2>
@@ -61,7 +61,7 @@ const TrackComp = () => {
             </div>
             <div className="flex gap-5">
               <span>
-                <Image src={checkIcon} height={80} alt="check icon" />
+                <Image src={checkIcon} height={150} alt="check icon" />
               </span>
               <div className="flex flex-col gap-3">
                 <h2 className="font-bold">User Interactive</h2>
@@ -74,9 +74,12 @@ const TrackComp = () => {
               </div>
             </div>
           </div>
-          <button className="n-btn mt-5">Learn more</button>
+          <div className="flex justify-center md:justify-start mb-5 md:mb-0">
+             <button className="n-btn mt-5">Learn more</button>
+          </div>
+         
         </div>
-        <div className="track-img w-1/2 flex justify-center">
+        <div className="track-img w-1/2 mx-auto  flex justify-center">
           <Image src={Phone} height={600} alt="phone" />
         </div>
       </div>

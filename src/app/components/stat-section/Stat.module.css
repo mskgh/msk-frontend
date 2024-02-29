@@ -1,6 +1,6 @@
 .statContainer {
   display: flex;
-  height: 15rem;
+  height: 18rem;
   position: relative;
   background-image: url("/images/stat_background.svg");
 }

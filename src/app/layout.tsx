@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
+import FooterComp from "./components/footer-section/FooterComp";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
         <AntdRegistry>
           <Navbar />
           <main>{children}</main>
+          <FooterComp />
         </AntdRegistry>
       </body>
     </html>

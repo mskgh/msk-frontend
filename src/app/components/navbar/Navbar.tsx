@@ -1,45 +1,101 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import brand from "../../../../public/images/brandLogo.svg";
 import { usePathname } from "next/navigation";
 import classNames from "classnames";
+import { FaBars } from "react-icons/fa";
 const Navbar = () => {
   const currentPath = usePathname();
+  const [mobileNav, showMobileNav] = useState(false);
+
+  const toggleNav = () => {
+    showMobileNav(!mobileNav);
+    console.log("Toggle navigation", mobileNav);
+  };
   const links = [
     { label: "Home", href: "/" },
     { label: "Feature", href: "/feature" },
     { label: "About", href: "/about" },
     { label: "Pricing", href: "/pricing" },
-    { label: "FQA", href: "/fqa" },
+    { label: "FQA", href: "/#fqa" },
     { label: "Tutorials", href: "/tutorials" },
-    { label: "Contact", href: "/contact" },
+    { label: "Contact", href: "/contact-us" },
   ];
 
   return (
-    <header className="px-5 py-2 flex items-center justify-between bg-white z-50 sticky w-full top-0">
-      <nav className="flex items-center justify-between w-[60%]">
+    <header className=" bg-[#F3F9FD] z-50 sticky top-0">
+      <div className="px-5  flex items-center justify-between z-40 relative">
+        <button className="flex md:hidden"  onClick={toggleNav}>
+          <FaBars />
+        </button>
         <Link href={"/"}>
           <Image src={brand} height={50} alt="brand logo" />
         </Link>
-        {links.map((link) => (
+        <nav
+          className={classNames({
+            "flex flex-col px-3 pb-4 absolute w-[40%] left-0 top-12 bg-[#F3F9FD] gap-3":
+              true,
+            hidden: mobileNav === false,
+          })}
+        >
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={classNames({
+                " font-bold py-1 px-3 border-b-2 border-[#517292]":
+                  link.href === currentPath,
+                "text-black py-1 px-3 ": link.href !== currentPath,
+                "hover:border-b-[#517292]  hover:border-b-2 transition-colors":
+                  true,
+              })}
+            >
+              {link.label}
+            </Link>
+          ))}
+          <div className="flex">
+            <Link
+              href={"/pricing"}
+              className=" px-3  py-1 rounded  border-[0.5px] font-bold bg-[#1d4771] text-white"
+            >
+              Get Started
+            </Link>
+          </div>
+        </nav>
+
+        <nav className=" hidden md:flex items-center w-[60%] ">
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={classNames({
+                " font-bold py-1 px-3 border-b-2 border-[#517292]":
+                  link.href === currentPath,
+                "text-black py-1 px-3 ": link.href !== currentPath,
+                "hover:border-b-[#517292]  hover:border-b-2 transition-colors":
+                  true,
+              })}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+        <div className="flex  gap-x-7 md:gap-x-16">
           <Link
-            key={link.href}
-            href={link.href}
-            className={classNames({
-              "text-[#0d243b]": link.href === currentPath,
-              "text-black": link.href !== currentPath,
-              "hover:text-[#0d243b] transition-colors": true,
-            })}
+            href={"/login"}
+            className="text-black px-3 py-1 rounded border-[#0034b9] border-[0.5px] font-bold hover:bg-[#1d4771] hover:text-white"
           >
-            {link.label}
+            Log in
           </Link>
-        ))}
-      </nav>
-      <div className="flex w-[30%] gap-x-16">
-        <button className="n-btn">Log in</button>
-        <button className="a-btn">Get Started Free</button>
+          <Link
+            href={"/pricing"}
+            className="hidden md:flex px-3  py-1 rounded  border-[0.5px] font-bold bg-[#1d4771] text-white"
+          >
+            Get Started
+          </Link>
+        </div>
       </div>
     </header>
   );

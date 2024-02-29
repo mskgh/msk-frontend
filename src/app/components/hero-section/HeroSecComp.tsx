@@ -7,7 +7,7 @@ import Image from "next/image";
 import style from "./Hero.module.css";
 const HeroSecComp = () => {
   return (
-    <section className="h-80">
+    <section className="h-80 bg-[#F3F9FD]">
       <div className={style.carouselContainer}>
         <div className={style.carouselTrack}>
           <div className={style.carouselItem}>

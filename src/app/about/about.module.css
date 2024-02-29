@@ -1,0 +1,16 @@
+.aboutContainer {
+  display: flex;
+  height: 18rem;
+  position: relative;
+  background-image: url("/images/aboutHero.jpg");
+  background-size: cover;
+}
+
+.aboutContainer::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #573a5b;
+  opacity: 0.2;
+}

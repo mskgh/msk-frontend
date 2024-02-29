@@ -5,15 +5,17 @@ const PricingComp = () => {
   return (
     <section className="bg-[#F3F9FD] flex justify-center items-center py-10">
       <div className="flex flex-col justify-center items-center w-[80%]">
-        <h1 className="pb-8 font-bold text-3xl">
+        <h1 className="pb-8 font-bold text-center text-3xl">
           Simple, easy pricing plans <br /> for the application
         </h1>
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 justify-center md:grid-cols-2 lg:grid-cols-3 gap-10">
           {/* card of card */}
           <div className="flex flex-col h-fit max-w-sm px-5 py-5 bg-white border-2 hover:border-[#FBAF5B] border-gray-200 rounded-lg shadow">
-            <h2 className="font-bold">Basic</h2>
-            <div className="py-5 flex items-end">
-              <h1 className="text-4xl font-bold mr-1">$20</h1>
+            <h2 className="font-bold text-2xl md:text-lg text-center md:text-left">
+              Basic
+            </h2>
+            <div className="py-5 flex justify-center md:justify-start items-end">
+              <h1 className="text-4xl font-bold mr-0 md:mr-1">$20</h1>
               <span>/month</span>
             </div>
             <div className="mb-4">
@@ -73,9 +75,11 @@ const PricingComp = () => {
             </button>
           </div>
           <div className="flex flex-col h-fit max-w-sm p-5 bg-white border-2 border-gray-200 hover:border-[#FBAF5B] rounded-lg shadow">
-            <h2 className="font-bold">Advance</h2>
-            <div className="py-5 flex items-end">
-              <h1 className="text-4xl font-bold mr-1">$60</h1>
+            <h2 className="font-bold text-2xl md:text-lg text-center md:text-left">
+              Advance
+            </h2>
+            <div className="py-5  flex justify-center md:justify-start items-end">
+              <h1 className="text-4xl font-bold mr-0 md:mr-1">$60</h1>
               <span>/month</span>
             </div>
             <div className="mb-4">
@@ -145,9 +149,11 @@ const PricingComp = () => {
             </button>
           </div>
           <div className="flex flex-col h-fit max-w-sm p-5 bg-white border-2 border-gray-200 rounded-lg hover:border-[#FBAF5B] shadow">
-            <h2 className="text-bold">Enterprise</h2>
-            <div className="py-5 flex items-end">
-              <h1 className="text-4xl font-bold mr-1">$100</h1>
+            <h2 className="text-bold text-2xl md:text-lg text-center md:text-left">
+              Enterprise
+            </h2>
+            <div className="py-5 flex justify-center md:justify-start items-end">
+              <h1 className="text-4xl font-bold mr-0 md:mr-1">$100</h1>
               <span>/month</span>
             </div>
 

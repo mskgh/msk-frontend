@@ -1,0 +1,17 @@
+.contactContainer {
+  display: flex;
+  height: 20rem;
+  position: relative;
+  background-image: url("/images/contactBg.jpeg");
+  background-size: cover;
+}
+
+.contactContainer::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* top: 0; */
+  background-color: #0f29a8;
+  opacity: 0.6;
+}

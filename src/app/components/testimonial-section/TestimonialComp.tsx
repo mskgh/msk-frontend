@@ -9,7 +9,7 @@ const TestimonialComp = () => {
     <section className="py-10 flex justify-center">
       <div className="w-[80%] flex flex-col items-center ">
         <h1 className="text-3xl">Customer Testimonials</h1>
-        <div className="grid grid-cols-2 gap-12 pt-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-20">
           {card.map((card, idx) => (
             <Card key={idx}>
               <p className="flex mb-4">
@@ -25,7 +25,7 @@ const TestimonialComp = () => {
                 dicta distinctio voluptatum suscipit tempora consequuntur amet
                 minus impedit dolore ipsam sint enim a dolorum? Officiis!
               </p>
-              <div className="flex gap-4">
+              <div className="flex flex-col md:flex-row gap-4">
                 <Image src={Avata} alt="profile" />
                 <div className="flex flex-col gap-2">
                   <h3 className="font-bold ">Emmanuel Rahl</h3>
