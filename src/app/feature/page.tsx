@@ -7,9 +7,9 @@ const FeaturePage = () => {
     <div className="flex flex-col">
       <div className={`${style.featureContainer}`}>
         <div className=" text-white flex justify-center  absolute  top-0 z-20  w-full h-full gap-20">
-          <div className="flex flex-col gap-4 items-center justify-center w-[80%] ">
-            <h1 className="text-4xl">Feature Request</h1>
-            <p className="text-normal w-1/2 text-center">
+          <div className="flex flex-col gap-4 items-center justify-center md:w-[80%] ">
+            <h1 className="text-4xl ">Feature Request</h1>
+            <p className="text-normal md:w-1/2 text-center px-3">
               At mystorekeeper, we are committed to delivering a powerful and
               efficient business management solution. We understand that the
               needs of businesses and organizations are constantly evolving, and
@@ -22,9 +22,9 @@ const FeaturePage = () => {
         </div>
       </div>
       <FeatureComp />
-      <div className="flex w-[80%] mx-auto py-12 gap-x-8">
-        <div className="contact-form w-[60%]">
-          <h1 className="text-2xl">Request a feature</h1>
+      <div className="flex flex-col md:flex-row w-full md:w-[80%] mx-auto py-12 gap-x-8">
+        <div className="contact-form mx-auto w-[80%] md:w-[60%]">
+          <h1 className="text-2xl text-[#1D4771] mb-3">Request a feature</h1>
           <form className="form flex flex-col gap-5">
             <input
               type="text"
@@ -45,7 +45,7 @@ const FeaturePage = () => {
             <button className="a-btn mt-4">Submit</button>
           </form>
         </div>
-        <div className=" p-5 flex">
+        <div className=" p-5 flex mt-8 md:mt-0">
           <span className="h-[90%] border border-[#1D4771] my-auto"></span>
           <div className="flex flex-col gap-3 ml-8 text-[#1D4771] ">
             <div className="flex flex-col gap-1 font-bold">

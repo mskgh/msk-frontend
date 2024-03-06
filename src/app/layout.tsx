@@ -21,9 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} relative`}>
         <AntdRegistry>
-          <Navbar />
+          {/* <Navbar /> */}
           <main>{children}</main>
-          <FooterComp />
+          {/* <FooterComp /> */}
         </AntdRegistry>
       </body>
     </html>
