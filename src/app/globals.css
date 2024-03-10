@@ -71,8 +71,6 @@ body {
   }
 }
 
-
-
 .accordion {
   list-style: none;
   display: grid;
@@ -159,3 +157,18 @@ body {
   }
 } */
 
+.ant-picker .ant-picker-input span.ant-picker-suffix {
+  margin-left: 1px;
+  margin-right: 10px;
+  order: -1;
+}
+
+.mb--0 {
+  margin-bottom: 1rem !important;
+}
+
+.btnBg{
+  background-color: #1d4771!important;
+  color: white!important;
+  ;
+}

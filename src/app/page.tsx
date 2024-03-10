@@ -8,11 +8,12 @@ import PricingComp from "./components/pricing-section/PricingComp";
 import TestimonialComp from "./components/testimonial-section/TestimonialComp";
 import DownloadComp from "./components/download-section/DownloadComp";
 import FAQComp from "./components/FAQ-section/FAQComp";
-import FooterComp from "./components/footer-section/FooterComp";
+import Layout from "./components/layout/Layout";
 
 export default function Home() {
   return (
-    <main className="flex flex-col">
+    <Layout>
+      <main className="flex flex-col">
       <HeroSecComp />
       <StatComp />
       <FeatureComp />
@@ -23,5 +24,7 @@ export default function Home() {
       <DownloadComp />
       <FAQComp />
     </main>
+    </Layout>
+    
   );
 }

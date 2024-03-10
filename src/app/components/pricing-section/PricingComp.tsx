@@ -1,7 +1,14 @@
+"use client";
 import React from "react";
 import checkIcon from "../../../../public/icons/Tick Square.svg";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+
 const PricingComp = () => {
+  const router = useRouter();
+  const basicPlan = () => {
+    router.push("/signUp");
+  };
   return (
     <section className="bg-[#F3F9FD] flex justify-center items-center py-10">
       <div className="flex flex-col justify-center items-center w-[80%]">
@@ -70,7 +77,10 @@ const PricingComp = () => {
                 <p>24 hours support</p>
               </div>
             </div>
-            <button className="btn mt-8 mx-auto transition-colors hover:bg-black hover:text-white">
+            <button
+              onClick={basicPlan}
+              className="btn mt-8 mx-auto transition-colors hover:bg-black hover:text-white"
+            >
               Start Fre Trial
             </button>
           </div>
@@ -144,7 +154,10 @@ const PricingComp = () => {
                 <p>Shared Infrastructure</p>
               </div>
             </div>
-            <button className="btn mt-8 mx-auto transition-colors hover:bg-black hover:text-white">
+            <button
+              onClick={basicPlan}
+              className="btn mt-8 mx-auto transition-colors hover:bg-black hover:text-white"
+            >
               Choose plan
             </button>
           </div>
@@ -219,7 +232,10 @@ const PricingComp = () => {
                 <p>Dedicated Infrastructure</p>
               </div>
             </div>
-            <button className="btn mt-8 mx-auto transition-colors hover:bg-black hover:text-white">
+            <button
+              onClick={basicPlan}
+              className="btn mt-8 mx-auto transition-colors hover:bg-black hover:text-white"
+            >
               Choose plan
             </button>
           </div>
