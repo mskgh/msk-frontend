@@ -27,7 +27,7 @@ const DownloadComp = () => {
             </button>
           </div>
           <p className="text-normal text-center px-2 md:px-0">
-            By clicking Sign Up you're confirming that you agree with our Terms
+            By clicking Sign Up you are confirming that you agree with our Terms
             and Conditions.
           </p>
 

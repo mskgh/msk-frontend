@@ -54,7 +54,7 @@ const TrackComp = () => {
                 <h2 className="font-bold">Seamless Sync</h2>
                 <p className="text-normal">
                   Experience effortless synchronization across all your devices.
-                  Your data stays updated in real time, whether you're on your
+                  Your data stays updated in real time, whether you are on your
                   desktop, tablet, or smartphone
                 </p>
               </div>
@@ -75,9 +75,8 @@ const TrackComp = () => {
             </div>
           </div>
           <div className="flex justify-center md:justify-start mb-5 md:mb-0">
-             <button className="n-btn mt-5">Learn more</button>
+            <button className="n-btn mt-5">Learn more</button>
           </div>
-         
         </div>
         <div className="track-img w-1/2 mx-auto  flex justify-center">
           <Image src={Phone} height={600} alt="phone" />
