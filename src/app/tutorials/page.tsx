@@ -2,9 +2,10 @@ import React, { Suspense } from "react";
 import style from "./tutorial.module.css";
 import { BsSearch } from "react-icons/bs";
 import VideoComponent from "../components/video-comp/Video";
+import Layout from "../components/layout/Layout";
 const TutorialPage = () => {
   return (
-    <section>
+    <Layout>
       <div className={`${style.tutorialContainer}`}>
         <div className=" text-white flex justify-center  absolute  top-0 z-20  w-full h-full gap-20">
           <div className="flex items-center w-[80%] ">
@@ -46,7 +47,7 @@ const TutorialPage = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Layout>
   );
 };
 

@@ -1,10 +1,11 @@
 import React from "react";
 import style from "./Feature.module.css";
 import FeatureComp from "../components/feature-section/FeatureComp";
-import { Input } from "antd";
+import Layout from "../components/layout/Layout";
 const FeaturePage = () => {
   return (
-    <div className="flex flex-col">
+    <Layout>
+      <div className="flex flex-col">
       <div className={`${style.featureContainer}`}>
         <div className=" text-white flex justify-center  absolute  top-0 z-20  w-full h-full gap-20">
           <div className="flex flex-col gap-4 items-center justify-center md:w-[80%] ">
@@ -64,6 +65,8 @@ const FeaturePage = () => {
         </div>
       </div>
     </div>
+    </Layout>
+    
   );
 };
 

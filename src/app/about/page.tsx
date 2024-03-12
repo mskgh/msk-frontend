@@ -9,9 +9,11 @@ import about_5 from "../../../public/images/about_5.svg";
 import about_6 from "../../../public/images/about_6.svg";
 import about_7 from "../../../public/images/about_7.svg";
 import about_8 from "../../../public/images/about_8.svg";
+import Layout from "../components/layout/Layout";
 const AboutPage = () => {
   return (
-    <section className="flex flex-col  bg-[#fafafa]">
+    <Layout>
+      <section className="flex flex-col  bg-[#fafafa]">
       <div className={`${style.aboutContainer}`}>
         <div className=" text-white flex justify-center  absolute  top-0 z-20  w-full h-full gap-20">
           <div className="flex items-center justify-center w-[80%] ">
@@ -147,6 +149,8 @@ const AboutPage = () => {
         </div>
       </div>
     </section>
+    </Layout>
+    
   );
 };
 

@@ -125,7 +125,8 @@ const ChangePwd = () => {
                   placeholder="Confirm Password"
                 />
               </Form.Item>
-              <div className="flex justify-end">
+              <div className="flex justify-between">
+                <Button onClick={()=>router.push('/')} className="p-2 btnBg ">Home</Button>
                 <Button htmlType="submit" className="p-2 btnBg ">Confirm</Button>
               </div>
             </div>

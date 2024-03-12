@@ -25,6 +25,10 @@ const SignUpStepForm: React.FC = () => {
     setCurrentStep(currentStep - 1);
   };
 
+  const handleBack=()=>{
+    router.push("/")
+  }
+
   const onFinish = () => {
     const formData = { ...form.getFieldsValue(true) };
 
@@ -72,6 +76,16 @@ const SignUpStepForm: React.FC = () => {
               onClick={handlePrev}
             >
               <IoMdArrowBack />
+            </Button>
+          )}
+
+          {currentStep === 0 && (
+            <Button
+              style={{ margin: "0 8px" }}
+              className="p-2 font-bold btnBg"
+              onClick={handleBack}
+            >
+              Home
             </Button>
           )}
           {currentStep < steps.length - 1 && (

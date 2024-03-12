@@ -106,8 +106,8 @@ const NewPassword = () => {
                   placeholder="Confirm Password"
                 />
               </Form.Item>
-              <div className="flex">
-                <Button onClick={handleNext} className="p-2 btnBg w-full">
+              <div className="flex justify-end  w-full">
+                <Button onClick={handleNext} className="p-2 btnBg">
                   Submit
                 </Button>
               </div>

@@ -109,7 +109,10 @@ const LoginComp = () => {
                   Sign up
                 </Link>
               </div>
-              <div className="flex justify-end mt-5">
+              <div className="flex justify-between mt-5">
+                <Button onClick={() => router.push("/")} className="p-2 btnBg ">
+                  Home
+                </Button>
                 <Button htmlType="submit" className="p-2 btnBg">
                   Sign In
                 </Button>
