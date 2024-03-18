@@ -11,12 +11,11 @@ const HeroSecComp = () => {
       <div className={style.carouselContainer}>
         <div className={style.carouselTrack}>
           <div className={style.carouselItem}>
-            <div className="">
-              <Image src={inShop} height={400} width={400} alt="left-img" />
+            <div >
+              <Image src={inShop} height={500} width={400} alt="left-img" />
             </div>
-
-            <div className="textContent text-black ">
-              <h1 className="text-2xl font-bold">
+            <div className="textContent ">
+              <h1 className="text-lg font-bold">
                 Discover How To Track <br /> Your Products
               </h1>
               <p className="w-full">
@@ -26,8 +25,8 @@ const HeroSecComp = () => {
           </div>
           <div className={style.carouselItem}>
             <Image src={leftImg} height={300} width={300} alt="left-img" />
-            <div className="textContent text-black">
-              <h1 className="text-2xl font-bold">
+            <div className="textContent ">
+              <h1 className="text-lg font-bold">
                 Customer-Centric <br /> Retailing
               </h1>
 
@@ -41,7 +40,7 @@ const HeroSecComp = () => {
 
           <div className={style.carouselItem}>
             <Image src={person} height={300} width={300} alt="left-img" />
-            <div className="textContent text-black">
+            <div className="textContent ">
               <h1 className="text-2xl font-bold">
                 Efficiency Through <br /> Technology
               </h1>
@@ -56,8 +55,8 @@ const HeroSecComp = () => {
 
           <div className={style.carouselItem}>
             <Image src={shop} height={300} width={400} alt="left-img" />
-            <div className="textContent text-black">
-              <h1 className="text-2xl">
+            <div className="textContent ">
+              <h1 className="text-lg">
                 Elevating Retail <br /> Standards
               </h1>
 
@@ -67,6 +66,7 @@ const HeroSecComp = () => {
               </p>
             </div>
           </div>
+          
         </div>
       </div>
     </section>

@@ -9,6 +9,10 @@ const PricingComp = () => {
   const basicPlan = () => {
     router.push("/signUp");
   };
+
+  const enterpriseSubscription = () => {
+    router.push("/enterprise");
+  };
   return (
     <section className="bg-[#F3F9FD] flex justify-center items-center py-10">
       <div className="flex flex-col justify-center items-center w-[80%]">
@@ -233,7 +237,7 @@ const PricingComp = () => {
               </div>
             </div>
             <button
-              onClick={basicPlan}
+              onClick={enterpriseSubscription}
               className="btn mt-8 mx-auto transition-colors hover:bg-black hover:text-white"
             >
               Choose plan

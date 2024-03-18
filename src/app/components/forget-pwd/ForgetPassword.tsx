@@ -73,7 +73,10 @@ const ForgetPassword = () => {
                 <Input placeholder="Enter email/ contact" />
               </Form.Item>
 
-              <div className="flex justify-end">
+              <div className="flex justify-between">
+                <Button onClick={() => router.back} className="p-2 btnBg">
+                  Back
+                </Button>
                 <Button onClick={handleNext} className="p-2 btnBg">
                   Next
                 </Button>

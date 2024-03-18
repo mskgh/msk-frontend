@@ -8,14 +8,14 @@
 .carouselTrack {
   display: flex;
   position: absolute;
-  /* left: 0; */
   justify-content: center;
   align-items: center;
-  /* overflow: scroll; */
-  gap: 16px;
+  gap: 24px;
   width: 200%;
   height: 100%;
-  animation: slide 15s linear infinite;
+  overflow-x: scroll;
+
+  animation: slide 30s linear infinite;
 }
 
 .carouselTrack:hover {
@@ -26,7 +26,6 @@
   0% {
     left: 0;
   }
-
   100% {
     left: -100%;
   }
@@ -44,9 +43,25 @@
 .carouselItem {
   display: flex !important;
   flex-direction: row;
-  column-gap: 2.5rem !important;
+  column-gap: 2rem !important;
+  position: relative;
   align-items: center;
-  width: 100%;
+  /* width: 50%; */
   height: 100%;
-  padding-inline: 2rem !important;
+  /* padding-inline: 2rem !important; */
+  /* border: 2px solid red !important; */
+}
+
+/* .textContent{
+  position: absolute;
+  color: #79365f !important;
+} */
+
+/* Mobile Carousel Css */
+.contentStyle {
+  height: 160px;
+  color: #fff;
+  line-height: 160px;
+  text-align: center;
+  background-color: #364d79;
 }

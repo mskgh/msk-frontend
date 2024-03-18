@@ -5,6 +5,7 @@ import successMark from "../../../public/images/success-mark.svg";
 import bigEllipse from "../../../public/images/downEllipse.svg";
 import mdEllipse from "../../../public/icons/Ellipse_md.svg";
 import ellipsePlus from "../../../public/icons/Ellipse_plus.svg";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -45,7 +46,7 @@ const page = () => {
                 />
                 <h4 className="text-[#1d4771] font-bold">Password Changed!</h4>
                 <p className="text-[#1d4771]">
-                  You can now Login to your account.
+                  You can now <Link href={'/login'} className="text-blue-700">Login</Link>  to your account.
                 </p>
               </div>
             </div>

@@ -19,15 +19,16 @@ const Navbar = () => {
     { label: "Feature", href: "/feature" },
     { label: "About", href: "/about" },
     { label: "Pricing", href: "/pricing" },
-    { label: "FQA", href: "/#fqa" },
+    { label: "FQA", href: "/FAQ" },
     { label: "Tutorials", href: "/tutorials" },
     { label: "Contact", href: "/contact-us" },
   ];
 
   return (
-    <header className=" bg-[#F3F9FD] z-50 sticky top-0">
-      <div className="px-5  flex items-center justify-between z-40 relative">
-        <button className="flex md:hidden"  onClick={toggleNav}>
+    <header className=" bg-[#F3F9FD] z-50 sticky py-2 top-0">
+      <div className="px-5  flex justify-between items-center z-40 relative">
+        <div className="flex w-2/3 justify-between md:justify-start items-center">
+          <button className="flex md:hidden"  onClick={toggleNav}>
           <FaBars />
         </button>
         <Link href={"/"}>
@@ -65,7 +66,7 @@ const Navbar = () => {
           </div>
         </nav>
 
-        <nav className=" hidden md:flex items-center w-[60%] ">
+        <nav className=" hidden md:flex ml-12 items-center justify-around w-[80%] ">
           {links.map((link) => (
             <Link
               key={link.href}
@@ -82,6 +83,9 @@ const Navbar = () => {
             </Link>
           ))}
         </nav>
+        </div>
+        
+
         <div className="flex  gap-x-7 md:gap-x-16">
           <Link
             href={"/login"}

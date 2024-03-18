@@ -18,6 +18,7 @@ import Image from "next/image";
 import { SlCalender } from "react-icons/sl";
 import { IoCallOutline, IoLocationOutline } from "react-icons/io5";
 import { Dayjs } from "dayjs";
+import { MdBusiness } from "react-icons/md";
 
 const { Option } = Select;
 
@@ -150,7 +151,7 @@ export const OrganizationDetailsStep = ({ form }: any) => (
         rules={[{ required: true, max: 300 }]}
       >
         <Input
-          prefix={<UserOutlined className="site-form-item-icon" />}
+          prefix={<MdBusiness className="site-form-item-icon" />}
           placeholder="Organization Name"
           // size="default"
         />

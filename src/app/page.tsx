@@ -9,12 +9,18 @@ import TestimonialComp from "./components/testimonial-section/TestimonialComp";
 import DownloadComp from "./components/download-section/DownloadComp";
 import FAQComp from "./components/FAQ-section/FAQComp";
 import Layout from "./components/layout/Layout";
+import MobileHeroComp from "./components/hero-section/MobileHeroComp";
 
 export default function Home() {
   return (
     <Layout>
       <main className="flex flex-col">
-      <HeroSecComp />
+        <div className="hidden md:block">
+           <HeroSecComp />
+        </div>
+     <div className="md:hidden block">
+      <MobileHeroComp/>
+     </div>
       <StatComp />
       <FeatureComp />
       <ServiceComp />
