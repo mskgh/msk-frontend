@@ -61,7 +61,7 @@ const FeatureComp = () => {
             return (
               <div
                 key={index}
-                className="flex flex-col gap-3 p-3 border  shadow rounded "
+                className="flex flex-col gap-3 p-3 border  shadow rounded hover:transition-colors hover:border-[#364d79]"
               >
                 <div className="_icon">
                   <Image src={img} height={30} width={30} alt="icon" />

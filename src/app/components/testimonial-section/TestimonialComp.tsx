@@ -5,6 +5,36 @@ import Image from "next/image";
 import { Card } from "antd";
 const TestimonialComp = () => {
   const card = [1, 2, 3, 4];
+
+  const cardData = [
+    {
+      id: "1",
+      name: "Sarah T.",
+      company: "Small Business Owner",
+      message:
+        "Using this MSK app has been a game-changer for my small business! It's incredibly intuitive and streamlined, making transactions a breeze. Plus, the reporting features have helped me track sales and inventory like never before. Highly recommended!",
+      rate: 3,
+    },
+    {
+      id: "2",
+      name: "Mike H.",
+      company: "Retail Store Manager",
+      message:
+        "I've tried several POS systems, but none compare to this app. Its user-friendly interface makes training new staff a snap, and the customizable features cater perfectly to my unique business needs. Thanks to this app, managing my store has never been easier!",
+      rate: 5,
+    },
+    {
+      id: "3",
+      name: "David S.",
+      company: "E-commerce Entrepreneur",
+      message:
+        "I've been using this POS app for my online store, and I couldn't be happier. It seamlessly integrates with my e-commerce platform, making it simple to process orders and manage inventory in real-time. Plus, the responsive customer support team has been incredibly helpful whenever I've had questions. It's a must-have for any online retailer",
+      rate: 6,
+    },
+    { id: "4", name: "", message: "", rate: 5 },
+    { id: "5", name: "", message: "", rate: 3 },
+  ];
+
   return (
     <section className="py-10 flex justify-center">
       <div className="w-[80%] flex flex-col items-center ">
@@ -30,9 +60,11 @@ const TestimonialComp = () => {
                 <div className="flex flex-col gap-2">
                   <h3 className="font-bold ">Emmanuel Rahl</h3>
                   <p className="text-normal">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Rem delectus eveniet nemo expedita nisi repellendus sunt
-                    repudiandae quisquam aliquam officiis obcaecati dolorem.
+                    Using MSK app has been a game-changer for my small business!
+                    It is incredibly intuitive and streamlined, making
+                    transactions a breeze. Plus, the reporting features have
+                    helped me track sales and inventory like never before.
+                    Highly recommended!
                   </p>
                 </div>
               </div>
