@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/navbar/Navbar";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
-import FooterComp from "./components/footer-section/FooterComp";
+import { Providers } from "./Theme/themeProvider";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,9 +21,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} relative`}>
         <AntdRegistry>
-          {/* <Navbar /> */}
-          <main>{children}</main>
-          {/* <FooterComp /> */}
+         <Providers>
+            <main>{children}</main>
+         </Providers>
+        
+         
         </AntdRegistry>
       </body>
     </html>

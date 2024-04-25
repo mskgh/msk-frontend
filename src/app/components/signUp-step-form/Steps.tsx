@@ -71,8 +71,48 @@ export const PersonalDetailsStep = ({ form, setDateOfBirth }: any) => (
         <Input
           prefix={<UserOutlined className="site-form-item-icon" />}
           placeholder="Full Name"
+          size="large"
         />
       </Form.Item>
+      <Form.Item
+        name="personalEmail"
+        validateTrigger="onBlur"
+        hasFeedback
+        className="mb--0"
+        rules={[
+          {
+            type: "email",
+            message: "The input is not valid E-mail!",
+          },
+          {
+            required: true,
+            message: "Please input your E-mail!",
+          },
+        ]}
+      >
+        <Input
+          prefix={<MailOutlined className="site-form-item-icon" />}
+          placeholder="Email"
+          size="large"
+        />
+      </Form.Item>
+      <Form.Item
+        name="personalContact"
+        hasFeedback
+        className="mb--0"
+        rules={[
+          {
+            required: true,
+          },
+        ]}
+      >
+        <Input
+          prefix={<IoCallOutline className="site-form-item-icon" />}
+          placeholder="Contact"
+          size="large"
+        />
+      </Form.Item>
+
       <Form.Item
         name={"dateOfBirth"}
         className="mr-4 mb--0"
@@ -84,6 +124,7 @@ export const PersonalDetailsStep = ({ form, setDateOfBirth }: any) => (
           }
           className="w-full flex flex-col-reverse"
           placeholder="Date of Birth"
+          size="large"
         />
       </Form.Item>
 
@@ -98,6 +139,7 @@ export const PersonalDetailsStep = ({ form, setDateOfBirth }: any) => (
         <Select
           // prefix={<UserOutlined className="site-form-item-icon" />}
           placeholder="select your gender"
+          size="large"
         >
           <Option value="male">Male</Option>
           <Option value="female">Female</Option>
@@ -153,7 +195,7 @@ export const OrganizationDetailsStep = ({ form }: any) => (
         <Input
           prefix={<MdBusiness className="site-form-item-icon" />}
           placeholder="Organization Name"
-          // size="default"
+          size="middle"
         />
       </Form.Item>
       <Form.Item
@@ -168,7 +210,7 @@ export const OrganizationDetailsStep = ({ form }: any) => (
           },
           {
             required: true,
-            message: "Please input your E-mail!",
+            message: "Please input your email!",
           },
         ]}
       >
@@ -177,6 +219,7 @@ export const OrganizationDetailsStep = ({ form }: any) => (
           placeholder="Email"
         />
       </Form.Item>
+
       <Form.Item
         hasFeedback
         name="location"
